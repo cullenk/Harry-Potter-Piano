@@ -10,23 +10,46 @@
   <title>Piano</title>
 </head>
 <body>
-  <div class="piano">
-    <div data-note="C" class="key white">A</div>
-    <div data-note="Db" class="key black">W</div>
-    <div data-note="D" class="key white">S</div>
-    <div data-note="Eb" class="key black">E</div>
-    <div data-note="E" class="key white">D</div>
-    <div data-note="F" class="key white">F</div>
-    <div data-note="Gb" class="key black">T</div>
-    <div data-note="G" class="key white">G</div>
-    <div data-note="Ab" class="key black">Y</div>
-    <div data-note="A" class="key white">H</div>
-    <div data-note="Bb" class="key black">U</div>
-    <div data-note="B" class="key white">J</div>
-    <div data-note="C2" class="key white">K</div>
-    <div data-note="Db2" class="key black">O</div>
-    <div data-note="D2" class="key white">L</div>
+
+<!--Loading Screen: Thanks to Federica Gangi for the GIF!-->
+<div id="loading-screen">
+  <div>
+    <img class="harry" src="images/harry-loading.gif" alt="Loading Harry Potter">
+    <h1>Loading...</h1>
   </div>
+</div>
+
+<!-- Piano -->
+
+  <div class="music-components">
+
+    <div class="title">
+      <img src="images/title.png" alt="Harry Potter Piano">
+    </div>
+    
+  <div class="piano">
+    <div data-note="C" class="key white">A<img src="images/alohamora.jpg"></div>
+    <div data-note="Db" class="key black">W<img src="images/avada.jpg"></div>
+    <div data-note="D" class="key white">S<img src="images/crucio.jpg"></div>
+    <div data-note="Eb" class="key black">E<img src="images/expecto.jpg"></div>
+    <div data-note="E" class="key white">D<img src="images/expelliarmus.png"></div>
+    <div data-note="F" class="key white">F<img src="images/immobolus.jpg"></div>
+    <div data-note="Gb" class="key black">T<img src="images/legillimens.jpg"></div>
+    <div data-note="G" class="key white">G<img src="images/levicorpus.jpg"></div>
+    <div data-note="Ab" class="key black">Y<img src="images/wingardium.jpg"></div>
+    <div data-note="A" class="key white">H<img src="images/mischief.jpg"></div>
+    <div data-note="Bb" class="key black">U<img src="images/occulus.jpg"></div>
+    <div data-note="B" class="key white">J<img src="images/reducto.jpg"></div>
+    <div data-note="C2" class="key white">K<img src="images/serpentsortia.jpg"></div>
+    <div data-note="Db2" class="key black">O<img src="images/stupify.jpg"></div>
+    <div data-note="D2" class="key white">L<img src="images/voldyscream.jpg"></div>
+    <div data-note="Eb2" class="key black">P<img src="images/riddiculus.jpg"></div>
+    <div data-note="E2" class="key white">=<img src="images/wormtail.jpg"></div>
+  </div>
+  <div class="spacebar">
+    <div data-note="spacebar" class="key" id="voldy">spacebar<img src="images/bah.jpg"></div>
+  </div>
+</div>
 
   <audio id="C" src="notes/Alohamora.m4a"></audio>
   <audio id="Db" src="notes/AvadaKedavra.m4a"></audio>
@@ -43,5 +66,8 @@
   <audio id="C2" src="notes/Serpentsortia.m4a"></audio>
   <audio id="Db2" src="notes/Stupify.m4a"></audio>
   <audio id="D2" src="notes/VoldyScream.m4a"></audio>
+  <audio id="Eb2" src="notes/Riddiculus.m4a"></audio>
+  <audio id="E2" src="notes/Wormtail.m4a"></audio>
+  <audio id="spacebar" src="notes/Bah.m4a"></audio>
 </body>
 </html>
